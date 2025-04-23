@@ -1,0 +1,338 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with Linking Words - 2nd Grade English (Continued)</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>More Fun with Linking Words & Conjunctions</h1>
+    </header>
+    
+    <div class="slide-container">
+        <div class="progress">
+            <div class="progress-dot active" data-slide="1"></div>
+            <div class="progress-dot" data-slide="2"></div>
+            <div class="progress-dot" data-slide="3"></div>
+            <div class="progress-dot" data-slide="4"></div>
+            <div class="progress-dot" data-slide="5"></div>
+        </div>
+        
+        <!-- Slide 1 -->
+        <div class="slide active" id="slide1">
+            <div class="slide-content">
+                <h2 class="slide-title">Sequence Words</h2>
+                <p style="font-size: 20px;">Sequence words help us show the <span style="color: #5f27cd; font-weight: bold;">order</span> of events!</p>
+                
+                <div class="sequencing-cards">
+                    <div class="card">First</div>
+                    <div class="card">Next</div>
+                    <div class="card">Then</div>
+                    <div class="card">After that</div>
+                    <div class="card">Finally</div>
+                </div>
+                
+                <div class="example">
+                    <p><span class="highlight">First</span>, I wake up in the morning.</p>
+                    <p><span class="highlight">Next</span>, I brush my teeth.</p>
+                    <p><span class="highlight">Then</span>, I eat breakfast.</p>
+                    <p><span class="highlight">After that</span>, I get dressed.</p>
+                    <p><span class="highlight">Finally</span>, I go to school.</p>
+                </div>
+                
+                <div class="interactive-area">
+                    <h3>Your Turn!</h3>
+                    <p>Put these events in order using sequence words:</p>
+                    
+                    <div class="sortable-container">
+                        <div class="sortable-item">eat lunch</div>
+                        <div class="sortable-item">go home</div>
+                        <div class="sortable-item">do homework</div>
+                        <div class="sortable-item">play with friends</div>
+                        <div class="sortable-item">have dinner</div>
+                    </div>
+                    
+                    <div class="drag-container">
+                        <p>Drag the activities here and add sequence words!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide" id="slide2">
+          <div class="slide-content">
+              <h2 class="slide-title">Linking Words Memory Game</h2>
+              <p style="font-size: 20px;">Match the linking words with the correct category!</p>
+              
+              <div class="game-board">
+                  <!-- These divs will be replaced by cards in the JS -->
+              </div>
+              
+              <div class="score-display">
+                  <p>Matches: <span id="match-count">0</span></p>
+                  <p>Attempts: <span id="attempt-count">0</span></p>
+              </div>
+              
+              <div class="linking-pairs">
+                  <div class="pair-card">
+                      <p>Addition Words</p>
+                      <p style="font-size: 14px; color: #666;">Words that add information</p>
+                  </div>
+                  <div class="pair-card">
+                      <p>Contrast Words</p>
+                      <p style="font-size: 14px; color: #666;">Words that show differences</p>
+                  </div>
+                  <div class="pair-card">
+                      <p>Reason Words</p>
+                      <p style="font-size: 14px; color: #666;">Words that explain why</p>
+                  </div>
+                  <div class="pair-card">
+                      <p>Sequence Words</p>
+                      <p style="font-size: 14px; color: #666;">Words that show order</p>
+                  </div>
+              </div>
+              
+              <button id="reset-game" style="margin-top: 20px;">Reset Game</button>
+          </div>
+      </div>
+        
+        <!-- Slide 3 -->
+        <div class="slide" id="slide3">
+            <div class="slide-content">
+                <h2 class="slide-title">Story Building with Linking Words</h2>
+                <p style="font-size: 20px;">Let's build a story using different linking words!</p>
+                
+                <div class="story-builder">
+                    <p>Once upon a time, there was a little rabbit <span class="highlight">and</span> his name was Hop.</p>
+                    <p>Hop wanted to find a carrot <span class="highlight">but</span> it started to rain.</p>
+                    <p>He was sad <span class="highlight">because</span> he was getting wet.</p>
+                    <p><span class="highlight">Then</span>, he saw a big umbrella leaf.</p>
+                    <p>He ran under the leaf <span class="highlight">so</span> he could stay dry.</p>
+                    <p><span class="highlight">While</span> he was under the leaf, he found a big orange carrot!</p>
+                    <p><span class="highlight">Finally</span>, Hop was happy with his snack.</p>
+                </div>
+                
+                <div class="dropdown-activity">
+                    <h3>Complete the Story!</h3>
+                    <p>Choose the best linking word for each blank:</p>
+                    
+                    <div class="dropdown-sentence">
+                        <p>The sun was bright 
+                            <select class="linking-select" data-correct="and">
+                                <option value="">Choose...</option>
+                                <option value="and">and</option>
+                                <option value="but">but</option>
+                                <option value="because">because</option>
+                            </select> 
+                            the sky was blue.
+                        </p>
+                    </div>
+                    
+                    <div class="dropdown-sentence">
+                        <p>I wanted to go swimming 
+                            <select class="linking-select" data-correct="but">
+                                <option value="">Choose...</option>
+                                <option value="and">and</option>
+                                <option value="but">but</option>
+                                <option value="because">because</option>
+                            </select> 
+                            it was too cold.
+                        </p>
+                    </div>
+                    
+                    <div class="dropdown-sentence">
+                        <p>We went to the playground 
+                            <select class="linking-select" data-correct="because">
+                                <option value="">Choose...</option>
+                                <option value="and">and</option>
+                                <option value="but">but</option>
+                                <option value="because">because</option>
+                            </select> 
+                            it was a sunny day.
+                        </p>
+                    </div>
+                    
+                    <button id="check-story">Check My Story</button>
+                    <p id="story-feedback"></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="slide" id="slide4">
+            <div class="slide-content">
+                <h2 class="slide-title">Linking Word Categories</h2>
+                <p style="font-size: 20px;">Let's learn more linking words for each category!</p>
+                
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin: 20px 0;">
+                    <div style="background-color: #d1f0c2; padding: 10px; border-radius: 10px; width: 45%; margin-bottom: 15px;">
+                        <h3>Addition Words</h3>
+                        <ul style="text-align: left;">
+                            <li>and</li>
+                            <li>also</li>
+                            <li>in addition</li>
+                            <li>furthermore</li>
+                            <li>too</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background-color: #f0c2c2; padding: 10px; border-radius: 10px; width: 45%; margin-bottom: 15px;">
+                        <h3>Contrast Words</h3>
+                        <ul style="text-align: left;">
+                            <li>but</li>
+                            <li>however</li>
+                            <li>although</li>
+                            <li>yet</li>
+                            <li>instead</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background-color: #c2e0f0; padding: 10px; border-radius: 10px; width: 45%; margin-bottom: 15px;">
+                        <h3>Reason Words</h3>
+                        <ul style="text-align: left;">
+                            <li>because</li>
+                            <li>so</li>
+                            <li>since</li>
+                            <li>therefore</li>
+                            <li>as a result</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background-color: #f0e6ff; padding: 10px; border-radius: 10px; width: 45%; margin-bottom: 15px;">
+                        <h3>Sequence Words</h3>
+                        <ul style="text-align: left;">
+                            <li>first</li>
+                            <li>next</li>
+                            <li>then</li>
+                            <li>after that</li>
+                            <li>finally</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="interactive-area">
+                    <h3>Categorize These Sentences</h3>
+                    <p>What type of linking word is used in each sentence?</p>
+                    
+                    <div style="text-align: left; margin: 15px 0;">
+                        <p>1. I like cats <span class="highlight">and</span> dogs. 
+                            <span class="badge badge-addition">Addition</span>
+                        </p>
+                        
+                        <p>2. I wanted ice cream <span class="highlight">but</span> the store was closed. 
+                            <span class="badge badge-contrast">Contrast</span>
+                        </p>
+                        
+                        <p>3. We stayed inside <span class="highlight">because</span> it was raining. 
+                            <span class="badge badge-reason">Reason</span>
+                        </p>
+                        
+                        <p>4. <span class="highlight">First</span>, I tie my shoes. <span class="highlight">Then</span>, I put on my jacket. 
+                            <span class="badge badge-sequence">Sequence</span>
+                        </p>
+                    </div>
+                    
+                    <p>Your turn! What category is each sentence?</p>
+                    
+                    <div style="text-align: left; margin: 15px 0;">
+                        <p>5. I like to read books <span class="highlight">also</span> I enjoy drawing.</p>
+                        <select class="category-select" data-correct="addition">
+                            <option value="">Choose category</option>
+                            <option value="addition">Addition</option>
+                            <option value="contrast">Contrast</option>
+                            <option value="reason">Reason</option>
+                            <option value="sequence">Sequence</option>
+                        </select>
+                        
+                        <p>6. I studied hard <span class="highlight">so</span> I got a good grade.</p>
+                        <select class="category-select" data-correct="reason">
+                            <option value="">Choose category</option>
+                            <option value="addition">Addition</option>
+                            <option value="contrast">Contrast</option>
+                            <option value="reason">Reason</option>
+                            <option value="sequence">Sequence</option>
+                        </select>
+                        
+                        <p>7. <span class="highlight">Finally</span>, we arrived at the party.</p>
+                        <select class="category-select" data-correct="sequence">
+                            <option value="">Choose category</option>
+                            <option value="addition">Addition</option>
+                            <option value="contrast">Contrast</option>
+                            <option value="reason">Reason</option>
+                            <option value="sequence">Sequence</option>
+                        </select>
+                        
+                        <p>8. She likes swimming <span class="highlight">however</span> she doesn't like diving.</p>
+                        <select class="category-select" data-correct="contrast">
+                            <option value="">Choose category</option>
+                            <option value="addition">Addition</option>
+                            <option value="contrast">Contrast</option>
+                            <option value="reason">Reason</option>
+                            <option value="sequence">Sequence</option>
+                        </select>
+                    </div>
+                    
+                    <button id="check-categories">Check My Answers</button>
+                    <p id="category-feedback"></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5 -->
+        <div class="slide" id="slide5">
+            <div class="slide-content">
+                <h2 class="slide-title">Create Your Comic Strip!</h2>
+                <p style="font-size: 20px;">Use linking words to write a comic strip story!</p>
+                
+                <div style="display: flex; justify-content: space-around; margin: 20px 0;">
+                    <div style="width: 30%; background-color: #fffacd; border-radius: 10px; padding: 10px;">
+                        <p style="font-weight: bold;">Panel 1</p>
+                        <div style="height: 100px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;"></div>
+                        <textarea placeholder="Write your first sentence here..." rows="3" style="width: 100%; border-radius: 5px; padding: 5px;"></textarea>
+                    </div>
+                    
+                    <div style="width: 30%; background-color: #fffacd; border-radius: 10px; padding: 10px;">
+                        <p style="font-weight: bold;">Panel 2</p>
+                        <div style="height: 100px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;"></div>
+                        <textarea placeholder="Use a linking word here..." rows="3" style="width: 100%; border-radius: 5px; padding: 5px;"></textarea>
+                    </div>
+                    
+                    <div style="width: 30%; background-color: #fffacd; border-radius: 10px; padding: 10px;">
+                        <p style="font-weight: bold;">Panel 3</p>
+                        <div style="height: 100px; background-color: #fff; border: 1px solid #ddd; border-radius: 5px; margin-bottom: 10px;"></div>
+                        <textarea placeholder="End your story with a linking word..." rows="3" style="width: 100%; border-radius: 5px; padding: 5px;"></textarea>
+                    </div>
+                </div>
+                
+                <div class="example">
+                    <h3>Example Comic Story</h3>
+                    <p>Panel 1: Max wanted to go to the park.</p>
+                    <p>Panel 2: <span class="highlight">However</span>, it started to rain.</p>
+                    <p>Panel 3: <span class="highlight">So</span>, Max decided to read a book at home instead.</p>
+                </div>
+                
+                <div style="background-color: #e0f7fa; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                    <h3>Remember to Use:</h3>
+                    <ul style="text-align: left;">
+                        <li>At least 3 different linking words</li>
+                        <li>Words from different categories</li>
+                        <li>Complete sentences</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="navigation">
+            <button id="prevBtn" disabled>Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+</div>
+</body>
+<script src="main.js"></script>
+</html>

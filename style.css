@@ -1,0 +1,307 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f9ff;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header {
+    background-color: #5bc0de;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+h1 {
+    color: #fff;
+    font-size: 32px;
+    margin: 0;
+}
+.slide-container {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    position: relative;
+    min-height: 400px;
+}
+.slide {
+    display: none;
+    text-align: center;
+    padding: 20px;
+}
+.slide.active {
+    display: block;
+}
+.slide-content {
+    min-height: 300px;
+}
+.slide-title {
+    color: #5bc0de;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.slide-img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+.example {
+    background-color: #fffacd;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+button {
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: all 0.3s;
+}
+button:hover {
+    background-color: #31b0d5;
+    transform: scale(1.05);
+}
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.activity {
+    background-color: #ffeecc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px 0;
+}
+.progress {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.progress-dot {
+    width: 15px;
+    height: 15px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.progress-dot.active {
+    background-color: #5bc0de;
+}
+.highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
+.interactive-area {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #e3f2fd;
+    border-radius: 10px;
+}
+.word {
+    display: inline-block;
+    margin: 0 3px;
+    cursor: default;
+}
+.word.linkable {
+    cursor: pointer;
+}
+.sequencing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.card {
+    width: 120px;
+    height: 80px;
+    background-color: #ffdab9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.story-builder {
+    text-align: left;
+    background-color: #e0f7fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.sortable-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.sortable-item {
+    background-color: #ffb6c1;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    user-select: none;
+}
+.drag-container {
+    min-height: 150px;
+    border: 2px dashed #5bc0de;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px 0;
+}
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 500px;
+    perspective: 1000px;
+}
+.game-cell {
+    background-color: #d1f0c2;
+    border-radius: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.game-cell:hover {
+    background-color: #c2e0f0;
+    transform: scale(1.05);
+}
+.linking-pairs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+.pair-card {
+    width: 150px;
+    background-color: #ffcccc;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.dropdown-activity {
+    background-color: #f0e6ff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.dropdown-sentence {
+    margin: 15px 0;
+}
+.badge {
+    display: inline-block;
+    padding: 3px 8px;
+    border-radius: 15px;
+    font-size: 14px;
+    margin-left: 5px;
+}
+.badge-addition {
+    background-color: #d1f0c2;
+}
+.badge-contrast {
+    background-color: #f0c2c2;
+}
+.badge-reason {
+    background-color: #c2e0f0;
+}
+.badge-sequence {
+    background-color: #f0e6ff;
+}
+.memory-card {
+    height: 80px;
+    background-color: #5bc0de;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.memory-card.flipped {
+    transform: rotateY(180deg);
+}
+.memory-card.matched {
+    background-color: #d1f0c2;
+    cursor: default;
+}
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.card-front {
+    background-color: #5bc0de;
+    transform: rotateY(180deg);
+}
+.card-back {
+    background-color: #5bc0de;
+    background-image: url('https://via.placeholder.com/80?text=?');
+    background-size: cover;
+    background-position: center;
+}
+.addition {
+    background-color: #ffcccc;
+}
+.contrast {
+    background-color: #ccffcc;
+}
+.reason {
+    background-color: #ccccff;
+}
+.sequence {
+    background-color: #ffe0b2;
+}
+.score-display {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
